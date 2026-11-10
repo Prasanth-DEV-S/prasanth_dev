@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanth | Android Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Prasanth - Android Developer specializing in Kotlin, Jetpack Compose, MVVM/MVI, and Modern Android Development.">
+    <meta name="keywords" content="Android Developer, Kotlin, Jetpack Compose, Mobile Engineer, Android Apps, Portfolio, Prasanth">
+    <meta name="author" content="Prasanth">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">
+                <i class="fa-brands fa-android logo-icon"></i>
+                <span class="logo-text">Prasanth<span>.dev</span></span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-code"></i> Mobile Software Engineer
+                    </div>
+                    <h1 class="hero-title">
+                        Crafting High-Performance <span class="highlight">Android Experiences</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hi, I'm <strong>Prasanth</strong>. An Android Developer passionate about building robust, intuitive, and scalable mobile apps using <strong>Kotlin</strong>, <strong>Jetpack Compose</strong>, and <strong>Clean Architecture</strong>.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:prasanth.dev.android@gmail.com" aria-label="Email Me">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Phone Mockup Container -->
+                <div class="hero-mockup-wrapper">
+                    <div class="phone-mockup">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div>
+                                <div class="phone-header">
+                                    <i class="fa-brands fa-android"></i> Jetpack Compose App
+                                </div>
+                                <div class="phone-body-content">
+                                    <div class="phone-card">
+                                        <h4>🚀 Responsive Layout</h4>
+                                        <p>Declarative UI with Material 3 components</p>
+                                    </div>
+                                    <div class="phone-card">
+                                        <h4>⚡ Coroutines & Flow</h4>
+                                        <p>Reactive state management & background tasks</p>
+                                    </div>
+                                    <div class="phone-card">
+                                        <h4>💾 Offline-First Architecture</h4>
+                                        <p>Room Database + Retrofit synchronization</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone-nav">
+                                <i class="fas fa-home"></i>
+                                <i class="fas fa-th-large"></i>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-subtitle">Passionate about clean code, modern Android APIs, and seamless user experiences.</p>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I specialize in native Android application development with a strong focus on modern architectural patterns such as MVVM and MVI. With Kotlin as my primary language, I build declarative interfaces using Jetpack Compose and manage asynchronous data streams using Kotlin Coroutines and StateFlow.
+                        </p>
+                        <p>
+                            Whether building offline-first local databases with Room, connecting to RESTful microservices with Retrofit, or maintaining robust dependency injection with Hilt, I strive to write clean, maintainable, and well-tested code.
+                        </p>
+                        <div style="margin-top: 1.5rem;">
+                            <span class="badge"><i class="fa-solid fa-check-double"></i> Clean Architecture</span>
+                            <span class="badge"><i class="fa-solid fa-bolt"></i> Responsive UIs</span>
+                            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Unit Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fa-brands fa-kotlin"></i>
+                            </div>
+                            <h3>Kotlin First</h3>
+                            <p>Leveraging Kotlin's full potential: Coroutines, Flow, Sealed Classes, and Extension functions.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <h3>Jetpack Compose</h3>
+                            <p>Creating modern, fluid UI components with Material 3 design principles and dynamic themes.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fa-solid fa-sitemap"></i>
+                            </div>
+                            <h3>MVVM / MVI</h3>
+                            <p>Unidirectional data flow, reactive state management, and separation of concerns.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="about-card-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3>Data & Networking</h3>
+                            <p>Room DB persistence, WorkManager background processing, Retrofit REST APIs, and Firebase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack / Skills Section -->
+        <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Skills & <span>Tech Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I use to build production-grade Android apps.</p>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Languages & Core -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Core & Languages</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fa-brands fa-kotlin" style="color:#7f52ff;"></i> Kotlin</span>
+                            <span class="skill-item"><i class="fa-brands fa-java" style="color:#f89820;"></i> Java</span>
+                            <span class="skill-item"><i class="fa-solid fa-bolt" style="color:#38bdf8;"></i> Coroutines</span>
+                            <span class="skill-item"><i class="fa-solid fa-water" style="color:#3ddc84;"></i> StateFlow & SharedFlow</span>
+                            <span class="skill-item"><i class="fa-solid fa-database" style="color:#c084fc;"></i> SQL & DataStore</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: UI & UX -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h3>UI Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fa-solid fa-cubes" style="color:#3ddc84;"></i> Jetpack Compose</span>
+                            <span class="skill-item"><i class="fa-solid fa-palette" style="color:#f43f5e;"></i> Material Design 3</span>
+                            <span class="skill-item"><i class="fa-solid fa-route" style="color:#38bdf8;"></i> Navigation 3 / Compose Nav</span>
+                            <span class="skill-item"><i class="fa-solid fa-code-branch" style="color:#a855f7;"></i> XML Layouts & Views</span>
+                            <span class="skill-item"><i class="fa-solid fa-wand-magic-sparkles" style="color:#eab308;"></i> MotionLayout / Animations</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Architecture & Libraries -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <h3>Architecture & Libraries</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fa-solid fa-boxes-stacked" style="color:#38bdf8;"></i> Dagger Hilt & Koin</span>
+                            <span class="skill-item"><i class="fa-solid fa-hard-drive" style="color:#3ddc84;"></i> Room Database</span>
+                            <span class="skill-item"><i class="fa-solid fa-network-wired" style="color:#a855f7;"></i> Retrofit & OkHttp</span>
+                            <span class="skill-item"><i class="fa-solid fa-gears" style="color:#f97316;"></i> WorkManager</span>
+                            <span class="skill-item"><i class="fa-solid fa-photo-film" style="color:#10b981;"></i> Coil / Glide</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Tools & DevOps -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h3>Tools & Testing</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-item"><i class="fa-brands fa-android" style="color:#3ddc84;"></i> Android Studio</span>
+                            <span class="skill-item"><i class="fa-brands fa-git-alt" style="color:#f05032;"></i> Git & GitHub</span>
+                            <span class="skill-item"><i class="fa-solid fa-vial" style="color:#ec4899;"></i> JUnit 5 & Mockk</span>
+                            <span class="skill-item"><i class="fa-brands fa-firebase" style="color:#ffca28;"></i> Firebase & Crashlytics</span>
+                            <span class="skill-item"><i class="fa-solid fa-hammer" style="color:#0284c7;"></i> Gradle & CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <p class="section-subtitle">A showcase of Android applications built with modern tools and clean engineering principles.</p>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="compose">Jetpack Compose</button>
+                    <button class="filter-btn" data-filter="fullapp">Full Apps</button>
+                    <button class="filter-btn" data-filter="library">Libraries / Samples</button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="compose fullapp">
+                        <div class="project-banner">
+                            <i class="fa-solid fa-music"></i>
+                            <span class="project-banner-badge">Compose + Media3</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MediaStream - Audio Player</h3>
+                            <p class="project-description">
+                                A high-performance background audio streaming Android app utilizing Jetpack Media3, Exoplayer, and Kotlin Flow for real-time playback state updates.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Jetpack Compose</span>
+                                <span class="project-tag">Media3</span>
+                                <span class="project-tag">Hilt</span>
+                                <span class="project-tag">Room</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="compose fullapp">
+                        <div class="project-banner">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="project-banner-badge">Offline-First</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ShopExpress - E-Commerce App</h3>
+                            <p class="project-description">
+                                Modern mobile store app featuring catalog browsing, cart management, local caching with Room DB, and clean architectural separation (MVVM).
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Compose</span>
+                                <span class="project-tag">Retrofit</span>
+                                <span class="project-tag">StateFlow</span>
+                                <span class="project-tag">Material 3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="compose fullapp">
+                        <div class="project-banner">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span class="project-banner-badge">Productivity</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TaskFlow - Productivity & Notes</h3>
+                            <p class="project-description">
+                                Feature-rich task management app with custom reminders scheduled via WorkManager, interactive dynamic widgets, and clean MVI state flow.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Jetpack Compose</span>
+                                <span class="project-tag">WorkManager</span>
+                                <span class="project-tag">DataStore</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="library">
+                        <div class="project-banner">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="project-banner-badge">API Integration</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CryptoTracker - Live Market Dashboard</h3>
+                            <p class="project-description">
+                                Real-time cryptocurrency tracking dashboard demonstrating REST API consumption, web sockets, offline caching, and interactive chart visualizations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">Coroutines</span>
+                                <span class="project-tag">Retrofit</span>
+                                <span class="project-tag">Charts</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fa-brands fa-github"></i> Code Repository
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Timeline Section -->
+        <section id="experience" class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Experience & <span>Milestones</span></h2>
+                <p class="section-subtitle">My journey in Android development and key achievements.</p>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - PRESENT</div>
+                            <h3 class="timeline-role">Android Developer</h3>
+                            <div class="timeline-company">Native Mobile Development</div>
+                            <ul class="timeline-details">
+                                <li>Architecting and developing native Android applications using Kotlin and Jetpack Compose.</li>
+                                <li>Implementing offline-first capabilities using Room Database, WorkManager, and StateFlow.</li>
+                                <li>Writing unit tests with JUnit 5 and Mockk to maintain high code coverage and reliability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h3 class="timeline-role">Mobile App Projects & Open Source</h3>
+                            <div class="timeline-company">Personal & Community Contributions</div>
+                            <ul class="timeline-details">
+                                <li>Built multiple full-stack Android apps exploring REST API integration, ExoPlayer, and dynamic Material 3 themes.</li>
+                                <li>Migrated legacy XML View layouts to Jetpack Compose declarative UI components.</li>
+                                <li>Optimized app startup times and memory footprint using Android Studio Profiler.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2022</div>
+                            <h3 class="timeline-role">Computer Science & Android Fundamentals</h3>
+                            <div class="timeline-company">Education & Skill Building</div>
+                            <ul class="timeline-details">
+                                <li>Mastered Object-Oriented Programming, Data Structures, and Software Design Patterns.</li>
+                                <li>Completed hands-on projects focusing on Java and Kotlin core programming principles.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Interested in collaborating or discussing an Android project? Let's connect!</p>
+
+                <div class="contact-container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h3>Let's talk about Android</h3>
+                            <p>I am always open to new opportunities, open-source projects, or architectural discussions.</p>
+
+                            <div class="contact-methods">
+                                <div class="contact-method-item">
+                                    <div class="contact-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h5>Email</h5>
+                                        <a href="mailto:prasanth.dev.android@gmail.com">prasanth.dev.android@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method-item">
+                                    <div class="contact-icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h5>GitHub</h5>
+                                        <a href="https://github.com/Prasanth-DEV-S" target="_blank" rel="noopener noreferrer">github.com/Prasanth-DEV-S</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-method-item">
+                                    <div class="contact-icon">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-detail">
+                                        <h5>LinkedIn</h5>
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/prasanth-dev</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="e.g. Alex Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-input" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-status" style="margin-top: 0.5rem; text-align: center;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">Prasanth<span style="color: var(--accent-android);">.dev</span></div>
+            <p class="footer-text">Built with HTML5, CSS3, JavaScript & Kotlin enthusiasm. Hosted on GitHub Pages.</p>
+            <p class="footer-text">&copy; <script>document.write(new Date().getFullYear())</script> Prasanth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

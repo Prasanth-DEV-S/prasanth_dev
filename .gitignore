@@ -1,0 +1,9 @@
+# IDE & OS files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build output if any
+build/
+.gradle/
